@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <title>ZoneHub - Home</title>
+            <link rel="stylesheet" href="style.css">
+        </head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZoneHub👾</title>
+    <body>
+        <body>
+            <header>
+                <h1>ZoneHub👾</h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html">Games</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </nav>
+            </header>
+    </body>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0dede;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Container */
+        .container {
+            width: 300px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+
+        /* Form Heading */
+        .container h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* Input Fields */
+        .container input[type="text"],
+        .container input[type="password"],
+        .container input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        /* Buttons */
+        .container button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: none;
+            background-color: #28a745;
+            color: #fff;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .container button:hover {
+            background-color: #218838;
+        }
+        .toggle-link {
+            text-align: center;
+            margin-top: 20px;
+            color: #007bff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="loginContainer">
+        <hr>
+        <h2 id="formTitle">Login</h2>
+        <hr>
+        <form id="loginForm">
+            <input type="text" id="username" name="username" placeholder="Username" required>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+            <div>
+            <a href="index.html">Back</a>
+            </div>
+        </form>
+        <p class="toggle-link" onclick="toggleForm()">Don't have an account? Sign Up</p>
+    </div>
+
+    <div class="container" id="signupContainer" style="display: none;">
+        <h2 id="formTitle">Sign Up</h2>
+        <form id="signupForm">
+            <input type="text" id="signupUsername" name="signupUsername" placeholder="Username" required>
+            <input type="email" id="signupEmail" name="signupEmail" placeholder="Email" required>
+            <input type="password" id="signupPassword" name="signupPassword" placeholder="Password" required>
+            <button type="submit">Sign Up</button>
+        </form>
+        <p class="toggle-link" onclick="toggleForm()">Already have an account? Login</p>
+    </div>
+
+    <script>
+        function toggleForm() {
+            var loginContainer = document.getElementById("loginContainer");
+            var signupContainer = document.getElementById("signupContainer");
+            
+            if (loginContainer.style.display === "none") {
+                loginContainer.style.display = "block";
+                signupContainer.style.display = "none";
+            } else {
+                loginContainer.style.display = "none";
+                signupContainer.style.display = "block";
+            }
+        }
+    </script>
+</body>
+<body>
+    <footer>
+        <p>gameworld@gmail.com</p>
+    </footer>
+</body>
+</html>

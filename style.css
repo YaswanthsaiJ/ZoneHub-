@@ -1,0 +1,139 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0dede;
+}
+
+/* Header styling */
+header {
+    background-color: #121111;
+    color: rgb(235, 229, 229);
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: rgb(245, 253, 254);
+    text-decoration: none;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Main section */
+main {
+    padding: 20px;
+}
+
+.game-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.game-item {
+    background-color: rgba(155, 192, 198, 0.692);
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 10px;
+    width: 300px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.game-item img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.game-item h3 {
+    margin: 10px 0;
+}
+
+.game-item a {
+    display: inline-block;
+    background-color: #14a1d8;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 100px;
+}
+.game-item a:hover {
+    background-color: #218838;
+}
+main {
+    padding: 20px;
+}
+.game-list2 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.game-item2{
+    background-color: rgba(155, 192, 198, 0.692);
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 10px;
+    width: 300px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.game-item2 img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.game-item2 h3 {
+    margin: 10px 0;
+}
+
+.game-item2 a {
+    display: inline-block;
+    background-color: #14a1d8;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 100px;
+}
+.game-item2 a:hover {
+    background-color: #218838;
+}
+
+
+
+/* Footer styling */
+footer {
+    text-align: center;
+    background-color: #090909;
+    color: white;
+    padding: 5px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+@media (max-width: 600px) {
+    .game-list {
+        flex-direction: column;
+    }
+
+    .game-item {
+        width: 100%;
+    }
+}
